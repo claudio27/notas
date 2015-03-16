@@ -1,6 +1,8 @@
 # Notas
 Contiene notas útiles como recordatorio
 
+#TODO: Generar una tabla de contenidos.
+
 ##Generar llave ssh
 	ssh-keygen -t rsa -C "email@ejemplo.com"
 ###Agregar la llave al agente ssh (ssh-agent)
@@ -32,6 +34,16 @@ Contiene notas útiles como recordatorio
 	# Identity added: /home/you/.ssh/my_other_key (/home/you/.ssh/my_other_key)	
 	o ver esta dirección:
 	https://help.github.com/articles/error-agent-admitted-failure-to-sign/
+
+#Putty
+	putty
+	connection->ssh->Auth->[Subir archivo.ppk]
+
+#rhc tools (openshift)
+	$gem install rhc
+	$rhc setup
+	(configura llaves ssh automáticamente y las sube al servidor también.)
+
 
 
 
