@@ -3,6 +3,11 @@ Contiene notas útiles como recordatorio
 
 #TODO: Generar una tabla de contenidos.
 
+---
+#Contenidos
+[Ubuntu]{#ubuntu}
+---
+
 #SSH
 =======
 
@@ -62,8 +67,8 @@ Contiene notas útiles como recordatorio
 	genymotion
 	...
 
-
-#Arreglar el brillo ubuntu 14.04 tarjeta intel
+#UBUNTU{#ubuntu}
+##Arreglar el brillo ubuntu 14.04 tarjeta intel
 
 	sudo touch /usr/share/X11/xorg.conf.d/20-intel.conf 
 
