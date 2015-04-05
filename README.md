@@ -69,7 +69,7 @@ Contiene notas útiles como recordatorio
 	genymotion
 	...
 
-#UBUNTU{#ubuntu}
+#UBUNTU
 ##Arreglar el brillo ubuntu 14.04 tarjeta intel
 
 	sudo touch /usr/share/X11/xorg.conf.d/20-intel.conf 
