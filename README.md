@@ -69,6 +69,9 @@ Herramientas de administración de redhat.
 	...
 
 #UBUNTU
+
+Lenovo g4030 ubuntu
+
 ##Arreglar el brillo ubuntu 14.04 tarjeta intel
 
 	sudo touch /usr/share/X11/xorg.conf.d/20-intel.conf 
@@ -84,6 +87,7 @@ Herramientas de administración de redhat.
 	EndSection 
 
 ##Driver wifi -ideapad-
+
 
 	rfkill list all
 	sudo rfkill unblock all
