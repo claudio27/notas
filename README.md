@@ -5,7 +5,7 @@ Contiene notas útiles como recordatorio
 
 ---
 #Contenidos
-[Ubuntu]{#ubuntu}
+[Ubuntu](#ubuntu)
 ---
 
 #SSH
