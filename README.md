@@ -1,14 +1,15 @@
 # Notas
 Contiene notas útiles como recordatorio
 
-#TODO: Generar una tabla de contenidos.
+###{TODO: Generar una tabla de contenidos.}
 
----
+
 #Contenidos
-*[Ubuntu](#ubuntu)
-*holi 
-*lalal
----
+* [Ubuntu](#ubuntu)
+* [SSH](#ssh)
+* [Putty](#putty)
+* [rhc](#rhc)
+
 
 #SSH
 =======
@@ -49,12 +50,13 @@ Contiene notas útiles como recordatorio
 	putty
 	connection->ssh->Auth->[Subir archivo.ppk]
 
-#rhc tools (openshift)
+#rhc 
+
+tools(openshift)
 	$gem install rhc
 	$rhc setup
 	(configura llaves ssh automáticamente y las sube al servidor también.)
 
----
 
 ### TODO:  Agregar,
 	instalación de java ppa, sublimetext y configuracion
@@ -84,4 +86,5 @@ Contiene notas útiles como recordatorio
 	BusID "PCI:0:2:0"
 	EndSection 
 
+##Driver wifi -ideapad- 
 
