@@ -1,9 +1,6 @@
 # Notas
 Contiene notas útiles como recordatorio
 
-###{TODO: Generar una tabla de contenidos.}
-
-
 #Contenidos
 * [Ubuntu](#ubuntu)
 * [SSH](#ssh)
@@ -86,5 +83,24 @@ Herramientas de administración de redhat.
 	BusID "PCI:0:2:0"
 	EndSection 
 
-##Driver wifi -ideapad- 
+##Driver wifi -ideapad-
+
+	rfkill list all
+	sudo rfkill unblock all
+	sudo modprobe -r ideapad_laptop
+
+	#hacerlo permanente
+
+	sudo -i
+	echo "blacklist ideapad-laptop"  >>  /etc/modprobe.d/blacklist.conf
+	modprobe -r ideapad-laptop
+	exit
+
+	#wifi se cae a los 15 min aprox.
+
+	echo "options rtl8723be fwlps=N ips=N" | sudo tee /etc/modprobe.d/rtl8723be.conf
+
+[Solución wifi driver](http://ubuntuforums.org/showthread.php?t=2243978)
+[Revisar](http://unix.stackexchange.com/questions/170012/rtl8723be-realtek-wifi-card-driver-not-working-on-ubuntu-14-04)
+
 
