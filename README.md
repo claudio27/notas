@@ -12,7 +12,6 @@ Contiene notas útiles como recordatorio
 
 
 #SSH
-=======
 
 ##Generar llave ssh
 	ssh-keygen -t rsa -C "email@ejemplo.com"
@@ -52,7 +51,8 @@ Contiene notas útiles como recordatorio
 
 #rhc 
 
-tools(openshift)
+Herramientas de administración de redhat.
+
 	$gem install rhc
 	$rhc setup
 	(configura llaves ssh automáticamente y las sube al servidor también.)
