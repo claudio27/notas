@@ -100,7 +100,7 @@ Herramientas de administración de redhat.
 
 	echo "options rtl8723be fwlps=N ips=N" | sudo tee /etc/modprobe.d/rtl8723be.conf
 
-[Solución wifi driver](http://ubuntuforums.org/showthread.php?t=2243978)
-[Revisar](http://unix.stackexchange.com/questions/170012/rtl8723be-realtek-wifi-card-driver-not-working-on-ubuntu-14-04)
+* [Solución wifi driver](http://ubuntuforums.org/showthread.php?t=2243978)
+* [Revisar](http://unix.stackexchange.com/questions/170012/rtl8723be-realtek-wifi-card-driver-not-working-on-ubuntu-14-04)
 
 
