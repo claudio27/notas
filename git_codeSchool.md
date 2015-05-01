@@ -14,6 +14,11 @@ Sistema de control de versiones distribuido
 *git remote add origin https://github.com/try-git/try_git.git : Agrega un repositorio remoto
 *git push -u origin master
 *git pull origin master
+*git diff HEAD: Si han habido cambios en el repositorio, se pueden ver desde el último 'commit', el más reciente puede ser referenciado usando el puntero HEAD.
+
+
+
+
 ##Significados
 
 *staging : puesta en escena
@@ -36,4 +41,6 @@ Para empujar nuestro código, hay que decirle a Git, a dónde empujar el código
 Pretendemos que ha pasado algún tiempo. Invitamos a otras personas a nuestro proyecto en github y han tirado (pull) sus cambios, hicieron sus commits y los empujaron (pushed) al repositorio.
 Podemos revisar por cambios en el repositorio github y (pull down) halar cualquier nuevo cambio.
 
+#El puntero HEAD
 
+El puntero HEAD es un puntero que mantiene la posición dentro de todos los diferentes commits. Por defecto HEAD apunta al commit más reciente, y puede ser usado como una forma rápida de referenciar el último commit sin tener que buscar el SHA.
