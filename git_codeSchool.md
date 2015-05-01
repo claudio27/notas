@@ -1,4 +1,5 @@
-#Git
+#Git (con Github)
+[Ver manuales de ruby en codeacademy.cc]
 
 Sistema de control de versiones distribuido
 
