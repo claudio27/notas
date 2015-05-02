@@ -112,3 +112,77 @@ Borrar todos los archivos es genial, pero que hay si ¿quieres borrar un directo
 
 	git rm -r directorio
 Borrará de forma recursiva todos los directorios y archivos del directorio dado.
+
+#1.21 Commiting Branch Changes (Confirmando cambios en la rama)
+
+Ahora que has eliminado todos los gatos, necesitarás confirmar los cambios.
+Siéntete libre de correr 'git status' para revisar los cambios que serán confirmados.
+
+	git commit -m "Remove all the cats"
+
+##Aviso
+Si pasa que borraste un archivo sin usar 'git rm', verás que todavía tienes
+que usar 'git rm' para borrar los archivos del árbol de trabajo. Puedes 
+ahorrarte este paso usando la opción '-a' en 'git commit', la cual auto elimina
+archivos con la confirmación.
+
+	git commit -am  "Cosas borradas"
+
+#1.22 Volviendo a la rama Master
+
+¡Bien!, terminaste con los gatos (the bug fix), sólo necesitas volver a la rama
+maestra y puedes copiar (o mezclar 'merge') los cambios de la rama clean_up y ponerlos en la rama master.
+
+Sigamos adelante y revisemos la rama maestra.
+
+	git checkout master
+##Aviso
+
+Si tienes un proyecto en GitHub, puedes hacer algo llamado pull request.
+Un pull request permite al jefe de proyecto, revisar a través de los cambios
+y hacer comentarios antes de decidir mezclar los cambios. Es un gran característica que es usada todo el tiempo por trabajadores a distancia y proyectos código abierto.
+
+Revisa https://help.github.com/articles/using-pull-requests para más información.
+
+#1.23 Preparando para mezclar
+
+Bien, el momento ha llegado, cuando tienes que mezclar tus cambios de la rama
+clean_up en la rama master. Respira profundo, no da miedo.
+
+Ya estamos en la rama master, sólo necesitamos decirle a Git que mezcle la rama
+clean_up con ella.
+
+	git merge clean_up
+##Aviso
+
+Conflictos de mezcla pueden ocurrir cuando los cambios al archivos son hechos 
+al mismo tiempo. Muchas personas se asustan cuando esto ocurre, pero ¡no hay que temer! No son espantosos, sólo necesitas decidir qué código mantener.
+Los conflictos de mezcla están más allá del alcance de este curso, pero si te
+interesa leer más, echa un vistaso a la sección del libro [Pro Git](http://git-scm.com/book) en [Cómo se presentan los conflictos](http://git-scm.com/docs/git-merge#_how_conflicts_are_presented)
+
+#1.24 Manteniendo las Cosas Limpias
+
+¡Felicitaciones! Acabas de realizar tu primer 'bugfix' y 'merge'. Todo lo que
+queda hacer es limpiar después de ti mismo.
+Después que haya terminado con la rama 'clean_up' no la necesita más.
+Puedes usar 'git branch -d <nombre de la rama>' para borrarla.
+
+	git branch -d clean_up
+
+##Aviso
+¿Qué pasa si estuviste trabajando en una rama con una característica nueva, y 
+decides que realmente no la quieres? Puedes decidir borrar la rama desde que 
+desguazas(desarmas) la idea. Notarás que 'git branch -d mala_idea' no funciona.
+Esto es porque '-d' no te deja borrar algo que no ha sido mezclado.
+Puedes también agregar '--force (-f)' o usar '-D' que combina '-d -f' juntos
+en un comando.
+
+#1.25 El Último Empujón
+
+Aquí estamos, en el último paso. Estoy orgulloso que llegaras tan lejos, y fue
+genial aprender Git contigo. Todo lo que queda hacer es empujar todo lo que
+has trabajado al repositorio remoto, ¡y esta listo!
+
+	git push
+
+
