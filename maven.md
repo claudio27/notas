@@ -49,12 +49,12 @@
 
 Ejemplo más simple de archivo POM.XML
 
-* '<modelVersion>' Version del POM (siempre 4.0.0)
-* '<groupId>' Grupo o organización al que pertenece el proyecto. Amenudo expresado
+* 'modelVersion' Version del POM (siempre 4.0.0)
+* 'groupId' Grupo o organización al que pertenece el proyecto. Amenudo expresado
 como nombre de dominio invertido 'org.company.bla'
-* '<artifactId>' Nombre dado a la librería del artefacto.
-* '<version>' Versión del proyecto que esta construyendose.
-* '<packaging>' Cómo el proyecto será empaquetado. Por defecto es "jar" para
+* 'artifactId' Nombre dado a la librería del artefacto.
+* 'version' Versión del proyecto que esta construyendose.
+* 'packaging' Cómo el proyecto será empaquetado. Por defecto es "jar" para
 archivos JAR. "war" para empaquetar WAR.
 
 
@@ -100,9 +100,9 @@ En el elemento <project>
 		</dependency>
 	    </dependencies>
 
-* '<groupId>' - Grupo o organización 
-* '<artifactId>' - La librería que es requerida
-* '<version>' - La versión específica que es requerida
+* 'groupId' - Grupo o organización 
+* 'artifactId' - La librería que es requerida
+* 'version' - La versión específica que es requerida
 
 
 Por defecto, todas las dependencias tienen ambito 'compile'. Estarán disponibles
@@ -118,3 +118,5 @@ requeridas para compilar o ejecutar el proyecto.
 	mvn compile
 
 [guía de Spring.io] (http://spring.io/guides/gs/maven)
+
+\<hola\>
