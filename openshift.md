@@ -8,6 +8,8 @@
 
 Muestra cómo instalar ruby y git en windows, y como instalar el 'rhc', para configurar todo.
 
+"Nota : falta agregar qué opciones seleccionar al instalar mysgit"
+
 ##SSH, putty
 
 Es necesario tener instalado rhc tools antes.
