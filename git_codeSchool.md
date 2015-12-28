@@ -184,5 +184,61 @@ genial aprender Git contigo. Todo lo que queda hacer es empujar todo lo que
 has trabajado al repositorio remoto, ¡y esta listo!
 
 	git push
+-------------------------------------------------------------------------------
+## Comandos utiles, diff, difftool, merge, mergetool
 
+	$git remote remove <name> : elimina repositorio remoto
+	$git remote rename <old> <new> : renombra repositorio remoto
+	$git remote add [-t <branch>][-m<master>][-f][--[no-]tags]
+					[--mirror -<fetch | push>]<name><url>
+	$git diff --name-status <branch>
+	$git diff --name-only <branch> 
+	Estando en otra rama distinta de master
+	$git diff --name-only master
+	$git checkout master : cambia a master
+	$git checkout master~2 Makefile : revierte Makefile a dos versiones anteriores
+	$rm -f hello.c : borra por error
+	$git checkout hello.c : lo trae devuelta desde el index, restaura
+	$git branch : lista las ramas presentes en el proyecto
+	$git branch -v : ver la última confirmación de cambios
+	$git branch [--merged|--no-merged] : muestra ramas fucionadas o no, con la rama actualmente activa.
 
+Ej.:
+
+	$git branch --merged
+	iss53 (fusionada, sin * todo el contenido incorporado a otras ramas)
+	*master
+
+	$git branch --no-merged
+	testing
+
+	$git branch -d testing
+	Error : the branch 'testing' isnot an ancestor of your current HEAD. If you are sure you want to delete it, run 'git branch -D testing'
+
+Ejemplo Crear rama
+
+	$git branch <nombre> (crea rama)
+	$git checkout <nombrerama> (salta a la rama)
+	$git checkout -b iss53 (crea rama y salta)
+
+	(En master)
+	$git checkout master
+	$git merge hotfix
+	$git branch -d hotfix
+	$git mergetool | $git status (ver si se resolvieron todos los conflictos)
+
+###Ver los cambios de un archivo entre commits
+
+	$git difftool HEAD~5 HEAD [<archivo>|<rutaArchivo>]
+	$git diff HEAD^^ HEAD main.c
+	$git diff HEAD^^..HEAD --main.c
+	$git diff HEAD~2 HEAD --main.c
+
+	$git log //copiar 4 primeros dígitos sha1
+	$git diff (sha1) (sha2)
+	$git difftool (ver diferencias entre commits)
+
+###log mas fácil
+
+	$git log --pretty=oneline
+	$git log -2 : los últimos 2
